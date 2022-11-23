@@ -11,9 +11,12 @@ import javax.persistence.Id;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Author {
+public class Review {
 
     @Id
-    private Long id;
-    private String name;
+    private long id;
+    private long hospitalId;
+    private String title;
+    private String content;
+    private String patientName;
 }
